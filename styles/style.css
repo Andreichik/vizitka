@@ -1,4 +1,5 @@
-* {margin: 0; padding: 0;}
+﻿* {margin: 0; padding: 0;}
+img {border: none;}
 
 body {
 	background-color: #00162f;
@@ -14,9 +15,10 @@ header {
 	background-size: cover;
 }
 
+/* Меню */
 nav {
 	position: absolute;
-	#top: 135px;
+	/*top: 135px;*/
 	top: 250px;
 	
 	width: 100%;
@@ -24,16 +26,68 @@ nav {
 	background-image: url(../images/menu_background_big.png);
 	background-repeat: no-repeat;
 	background-position: left;
-	-webkit-background-size: cover;
+	/*-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover;
+	-o-background-size: cover;*/
 	background-size: cover;
 }
 #menu {
 	/*border: 1px solid green;*/
 	height: 100px;
+	width: 1100px;
+	margin: auto;
+}
+#menu a {color: #04d8ef; text-decoration: none;}
+#menu a:hover {color: white; text-decoration: none;}
+.item-menu {
+	/*border: 1px solid orange;*/
+	color: white;
+	width: 160px;
+	height: 100%;
+	float: left;
+}
+.item-menu-title {
+	/*border: 1px solid orange;*/
+	font-size: 18px;
+	padding-left: 10px;
+	position: absolute;
+	bottom: 20px;
+}
+.item-menu-title-a {
+	/*border: 1px solid orange;*/
+	font-size: 18px;
+	padding-left: 10px;
+	position: absolute;
+	bottom: 0px;
+}
+.item-menu-active {
+	/*border: 1px solid red;*/
+	width: 92px;
+	height: 116px;
+	background-image: url(../images/menu_active.png);
+	background-repeat: no-repeat;
+}
+#logo {
+	float: right;
+}
+.mlogo {
+	width:67px;
+	height: 67px;
+    background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	margin-top: 16px;
+	margin-right: 35px;
+	float:left;
 }
 
+#wrapper {
+	/*border: 1px solid red;*/
+	width: 1200px;
+	min-height:750px;
+	margin: auto;
+}
+
+/* Подвал */
 footer {
 	position: fixed;
 	bottom:0px;
@@ -43,17 +97,35 @@ footer {
 	background-image: url(../images/footer_background_big.png);
 	background-repeat: no-repeat;
 	background-position: left;
-	-webkit-background-size: cover;
+	/*-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover;
+	-o-background-size: cover;*/
 	background-size: cover;
 }
-
-#wrapper {
+#social {
 	/*border: 1px solid red;*/
-	width: 1200px;
-	min-height:750px;
-	margin: auto;
+	margin-top: 5px;
+    margin-right: 35px;
+	float: right;
+}
+.social-icon  {
+    width: 17px;
+    height: 17px;
+    background: url(../images/social-icon.png) no-repeat;
+    display: inline-block;
+    margin: 5px 3px 0 0;
+}
+.vk {
+    background-position: 0 0;
+}
+.facebook {
+    background-position: -17px 0;
+}
+.ok {
+    background-position: -34px 0;
+}
+.twitter {
+    background-position: -51px 0;
 }
 
 /* Блоки на главной */
@@ -104,19 +176,50 @@ footer {
 	float: right;
 	padding: 0 5px 0 20px;
 	
-	background-image: url(../images/like_disable.png);
-	background-repeat: no-repeat;
+	background-image: url(../images/like-da.png);
 	background-position: 0px 5px;
+}
+.item-likes-text {
+	float: right;
+	padding: 0 5px 0 5px;
+}
+.item-likes-img {
+	width: 15px;
+	height: 13px;
+	float: right;
+	margin: 3px 0 0 0;
+	text-decoration: none;
+	
+	background-image: url(../images/like-da.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
 }
 .item-comments {
 	float: right;
-	padding: 0 0px 0 20px;
+	padding: 0 0 0 20px;
 	margin-left: 10px;
 	
 	background-image: url(../images/comment_disable.png);
 	background-repeat: no-repeat;
 	background-position: 0px 5px;
 }
+
+.item-comments-text {
+	float: right;
+	padding: 0 5px 0 5px;
+}
+.item-comments-img {
+	width: 16px;
+	height: 15px;
+	float: right;
+	margin: 3px 0 0 0;
+	text-decoration: none;
+	
+	background-image: url(../images/comment-da.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
 .item-content {
 	width: 350px;
 	height: 47px;
@@ -129,7 +232,29 @@ footer {
 	bottom: 0px;
 }
 
+.category-block:hover {
+	background: url(../images/block-active.png) no-repeat;
+}
+.category-block:hover div.item-content { color: white; }
+.category-block:hover div.item-content a { color: #1b75bc; }
+.category-block:hover div.item-header a { color: #00aeef; }
+.category-block:hover div.item-share a { color: #74d1f6; }
+
+.category-block:hover a.item-likes-img {
+	background-image: url(../images/like-da.png);
+	background-repeat: no-repeat;
+	background-position: -15px 0px;
+}
+.category-block:hover a.item-comments-img {
+	background-image: url(../images/comment-da.png);
+	background-repeat: no-repeat;
+	background-position: -16px 0px;
+}
+.category-block:hover span {color: white;}
+
+
+
 #buffer {
-	height:30px;
-	margin:5px;
+	height: 30px;
+	margin: 5px;
 }
