@@ -1,0 +1,135 @@
+* {margin: 0; padding: 0;}
+
+body {
+	background-color: #00162f;
+	font: 16px Calibri, sans-serif;
+}
+
+header {
+	height: 400px;
+	background: #335296;
+	background-image: url(../images/header_background.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+}
+
+nav {
+	position: absolute;
+	#top: 135px;
+	top: 250px;
+	
+	width: 100%;
+	
+	background-image: url(../images/menu_background_big.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#menu {
+	/*border: 1px solid green;*/
+	height: 100px;
+}
+
+footer {
+	position: fixed;
+	bottom:0px;
+	width: 100%;
+	height: 40px;
+	
+	background-image: url(../images/footer_background_big.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#wrapper {
+	/*border: 1px solid red;*/
+	width: 1200px;
+	min-height:750px;
+	margin: auto;
+}
+
+/* Блоки на главной */
+.category-block {
+	background-color: #000f23;
+	float: left;
+}
+.c-block1 {
+	width: 520px;
+	height: 345px;
+	margin: 30px 26px -5px 57px;
+}
+.c-block2{
+	width: 520px;
+	height: 345px;
+	margin: 30px 0px -5px 0px;
+}
+.block-content {
+	width: 492px;
+	height: 317px;
+	
+	position: relative;
+	top: 14px;
+	left: 14px;
+}
+.item-header-color {color: #2b3990;}
+.item-text-color {color: #6d6b89;}
+
+.item-image {
+	width: 492px;
+	height: 235px;
+	overflow: hidden;
+}
+.item-header {
+	width: 492px;
+	height: 25px;
+	padding: 10px 0px 0 0px;
+	/*background-color:orange;*/
+}
+.item-header-text {
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+	float: left;
+	text-decoration: none;
+}
+.item-likes {
+	float: right;
+	padding: 0 5px 0 20px;
+	
+	background-image: url(../images/like_disable.png);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+}
+.item-comments {
+	float: right;
+	padding: 0 0px 0 20px;
+	margin-left: 10px;
+	
+	background-image: url(../images/comment_disable.png);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+}
+.item-content {
+	width: 350px;
+	height: 47px;
+	overflow: hidden;
+	/*background-color: yellow;*/
+}
+.item-share {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+#buffer {
+	height:30px;
+	margin:5px;
+}
