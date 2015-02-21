@@ -4,6 +4,7 @@ img {border: none;}
 body {
 	background-color: #00162f;
 	font: 16px Calibri, sans-serif;
+	min-width: 1200px;
 }
 
 header {
@@ -22,6 +23,7 @@ nav {
 	top: 250px;
 	
 	width: 100%;
+	min-width: 1200px;
 	
 	background-image: url(../images/menu_background_big.png);
 	background-repeat: no-repeat;
@@ -79,13 +81,18 @@ nav {
 	margin-right: 35px;
 	float:left;
 }
+#mainnav {z-index: 9999;}
+#mainnav.fixed {
+    position: fixed;
+    top: 0;
+}
 
 #wrapper {
 	/*border: 1px solid red;*/
 	width: 1200px;
-	min-height:750px;
 	margin: auto;
 }
+#wrapper-clear {clear: left;}
 
 /* Подвал */
 footer {
@@ -256,5 +263,5 @@ footer {
 
 #buffer {
 	height: 30px;
-	margin: 5px;
+	margin-top: 40px;
 }
