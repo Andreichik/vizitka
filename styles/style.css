@@ -6,6 +6,7 @@ body {
 	/*font: 18px Calibri, sans-serif;*/
 	/*font-family: 16px "HelveticaNeue-Light";*/
 	font: 15px helvetica, arial, sans-serif;
+	font: 15px 'Roboto', sans-serif;
 	line-height: 1.35;
 	min-width: 1200px;
 	overflow-y: scroll;
@@ -22,13 +23,18 @@ header {
 /* Меню */
 #navigation.fixed {
     position: fixed;
-    top: 0;
+    top: -50px;
 }
+#navigation.fixed #mlogo{
+    margin-top: 70px;
+}
+header.hide { background: #00162f; }
 
 .nav {
 	position: fixed;
-	top: 0px;
+	top: -50px;
 	
+	height: 100px;
 	width: 100%;
 	min-width: 1200px;
 	
@@ -45,11 +51,17 @@ header {
 }
 .nav-main{ position: absolute; top: 250px; }
 
-#menu {
-	/*border: 1px solid green;*/
+#wrapper-menu {
+/*border: 1px solid green;*/
 	height: 100px;
-	width: 1100px;
+	width: 1200px;
 	margin: auto;
+}
+#menu {
+/*border: 1px solid red;*/
+	height: 100px;
+	width: 1125px;
+	float: left;
 }
 .item-menu {
 	/*border: 1px solid orange;*/
@@ -69,18 +81,41 @@ header {
 	background-image: url(../images/menu_active.png);
 	background-repeat: no-repeat;
 }
-#logo {
+#logo, #mlogo {
+	/*border: 1px solid orange;*/
+	margin-top: 70px;
+	margin-right: -50px;
 	float: right;
 }
-.mlogo {
+#mlogo {
+	margin-top: 16px;
+}
+.logo {
 	width:67px;
 	height: 67px;
+	
+	display: block;
+	
     background-image: url(../images/logo.png);
 	background-repeat: no-repeat;
-	margin-top: 16px;
-	margin-right: 35px;
-	float:left;
 }
+.mlogo {
+border: 1px solid green;
+	width:67px;
+	height: 67px;
+	
+	display: block;
+	float: right;
+	margin: 16px -50px 0 0;
+	/*position: relative;
+	right: 0;*/
+	
+    background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	/*margin-top: 16px;
+	margin-right: 35px;*/
+}
+
 .item-menu a {
 	color: #04d8ef;
 	text-decoration: none;
@@ -117,6 +152,7 @@ header {
 	margin-top: 100px;
 }
 .wrapper-about {
+/*border: 1px solid red;*/
 	min-height: 655px;
 	background-image: url(../images/about-background.png);
 	background-repeat: no-repeat;
@@ -301,6 +337,7 @@ footer {
 .item-about-header {
 	width: 100%;
 	text-align: center;
+	font-weight: bold;
 }
 .item-about-header-text {
 	font-size: 16px;
@@ -331,9 +368,10 @@ footer {
 }
 .about-right {
 	/*border: 1px solid;*/
-	width: 900px;
+	width: 825px;
 	color: white;
-	float: right;
+	padding-left: 10px;
+	float: left;
 }
 .about-right h1{
 	font-size: 18px;
@@ -362,8 +400,8 @@ div.about-projects img{
 
 /* Проект */
 .project-left {
-	/*border: 1px solid;*/
-	width: 950px;
+	/*border: 1px solid red;*/
+	width: 900px;
 	margin-top: 20px;
 	/*margin-bottom: 40px;*/
 	float: left;
@@ -372,12 +410,14 @@ div.about-projects img{
 	font-size: 18px;
 	color: white;
 	font-weight: normal;
+	margin-bottom: 10px;
 }
 .project-right {
 	/*border: 1px solid;*/
 	width: 230px;
 	margin-top: 20px;
-	float: right;
+	margin-left: 20px;
+	float: left;
 }
 div.project-right h2{
 	font-size: 18px;
